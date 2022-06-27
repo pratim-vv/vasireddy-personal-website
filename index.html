@@ -10,34 +10,35 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="main-content">
-        <header class="section sec1 active header" id="home">
+        <header>
  
         </header>
         <main>
             <p> heyo sis</p>
-            <section class="section sec2 projects" id="projects"></section>
-            <section class="section sec3 about" id="about"></section>
         </main>
-        <div class="controls" >
-            <control class="control control-1 active-btn" data-id="home">
-                <i class="fa-solid fa-house"></i>
-            </control>
-            <control class="control control-2" data-id="projects">
-                <i class="fa-solid fa-briefcase"></i>
-            </control>
-            <control class="control control-3" data-id="about">
-                <i class="fa-solid fa-user"></i>
-            </control>
-            <control class="control control-4">
-                <i class="fa-brands fa-github"></i>
-            </control>
-            <control class="control control-5">
-                <i class="fa-brands fa-linkedin"></i>
-            </control>
-            <control class="control control-6">
-                <i class="fa-brands fa-instagram"></i>
-            </control>
+        <div class="controls">
+            <div class="grouping">
+                <control class="control control-1 active-btn" id="home" title="Home">
+                    <i class="fa-solid fa-house"></i>
+                </control>
+                <control class="control control-2" id="about" title="About Me">
+                    <i class="fa-solid fa-user"></i>
+                </control>
+                <control class="control control-3" id="projects" title="Projects">
+                    <i class="fa-solid fa-briefcase"></i>
+                </control>
+            </div>
+            <div class="grouping">
+                <control class="control control-4" onclick="window.open('https://github.com/pratim-vv')" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </control>
+                <control class="control control-5" onclick="window.open('https://www.linkedin.com/in/pratim-vasireddy-412a2a225')" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </control>
+                <control class="control control-6" onclick="window.open('https://www.instagram.com/pradum_vv/')" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </control>
+            </div>
         </div>
-        <script src="app.js"></script>
     </body>
 </html>

@@ -12,7 +12,7 @@
     --color-light-decore: #ffdcd9;
     --color-dark-decore: #f1a0c0;
     --color-pale-pink: #ffc7dd;
-    --color-pale-white: #ffebdd;
+    --color-pale-white: #f8e4d5;
     --transition: all .35s ease-in-out;
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .2);
 }
@@ -53,26 +53,6 @@ section {
     background-color: var(--color-light);
 }
 
-.sec1 {
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-.sec2 {
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-.sec3 {
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-.sec4 {
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
 .controls {
     position: fixed;
     z-index: 10;
@@ -85,12 +65,24 @@ section {
     transform: translateY(-50%);
 }
 
-.controls .active-btn {
+.grouping {
+    width: 85px;
+    height: 265px;
+    display: flex;
+    background-color: var(--color-dark);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.7rem 0;
+    border-radius: 10px;
+}
+
+.active-btn {
     background-color: var(--color-light-decore) !important;
     transition: var(--transition);
 }
 
-.controls .active-btn i {
+.active-btn i {
     color: var(--color-dark-decore) !important;
 }
 
@@ -108,8 +100,16 @@ section {
     box-shadow: var(--box-shadow-1);
 }
 
+.controls .control:hover {
+    background-color: var(--color-pale-pink);
+}
+
 .controls .control i {
     font-size: 1.2rem;
     color: var(--color-light-decore);
     pointer-events: none;
+}
+
+.active-btn:hover {
+    background-color: var(--color-pale-white) !important;
 }
