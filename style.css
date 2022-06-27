@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+ 
+:root {
+    --color-light: #e0e3d2;
+    --color-dark: #666465;
+    --color-medium: #b29b8b;
+    --color-light-decore: #ffdcd9;
+    --color-dark-decore: #f1a0c0;
+    --color-pale-pink: #ffc7dd;
+    --color-pale-white: #ffebdd;
+    --transition: all .35s ease-in-out;
+    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .2);
+}
+
+body {
+    background-color: var(--color-light);
+    font-family: "Homenaje", sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-dark);
+    transition: var(--transition);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+header {
+    height: 100vh;
+    color: var(--color-dark);
+    overflow: hidden;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 3rem 18rem;
+}
+
+.section {
+    transform: translateY(-100%);
+    transition: var(--transition);
+    background-color: var(--color-light);
+}
+
+.sec1 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec2 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec3 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec4 {
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.controls .active-btn {
+    background-color: var(--color-light-decore) !important;
+    transition: var(--transition);
+}
+
+.controls .active-btn i {
+    color: var(--color-dark-decore) !important;
+}
+
+.controls .control {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--color-dark-decore);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem 0;
+    box-shadow: var(--box-shadow-1);
+}
+
+.controls .control i {
+    font-size: 1.2rem;
+    color: var(--color-light-decore);
+    pointer-events: none;
+}
