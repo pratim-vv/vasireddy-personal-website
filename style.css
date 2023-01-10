@@ -207,6 +207,9 @@ p {
 
   .project {
     background: var(--color-medium);
-    width: 100px;
-    height: 100px;
+    width: 283px;
+    height: 212px;
+    margin: 4rem 0 0 0;
+    border-radius: 5px;
+    box-shadow: var(--color-dark);
   }
