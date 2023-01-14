@@ -220,3 +220,12 @@ p {
     width: 85%;
     height: 85%;
   }
+
+  .project:hover {
+    filter: none;
+    -webkit-filter: grayscale(25%);
+    -moz-filter:    grayscale(25%);
+    -ms-filter:     grayscale(25%);
+    -o-filter:      grayscale(25%);
+    cursor: pointer;
+  }
