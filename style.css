@@ -222,9 +222,29 @@ p {
 
   .project:hover {
     filter: none;
-    -webkit-filter: grayscale(25%);
-    -moz-filter:    grayscale(25%);
-    -ms-filter:     grayscale(25%);
-    -o-filter:      grayscale(25%);
+    -webkit-filter: grayscale(33%);
+    -moz-filter:    grayscale(33%);
+    -ms-filter:     grayscale(33%);
+    -o-filter:      grayscale(33%);
     cursor: pointer;
+  }
+
+  .project:hover .information {
+    opacity: 1 !important;
+  }
+
+  .information {
+    position: absolute;
+    justify-content: center;
+    opacity: 0;
+    overflow-wrap: break-word;
+    margin: 13.875%;
+  }
+
+  .information:hover {
+    opacity: 1 !important;
+  }
+
+  .skills {
+    font-style: italic;
   }
