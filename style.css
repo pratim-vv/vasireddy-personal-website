@@ -239,6 +239,8 @@ p {
     opacity: 0;
     overflow-wrap: break-word;
     margin: 13.875%;
+    background: #ffdcd9;
+    border-radius: 5px;
   }
 
   .information:hover {
