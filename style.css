@@ -250,3 +250,9 @@ p {
   .skills {
     font-style: italic;
   }
+
+  .center {
+    margin: auto 13.875% auto 13.875%;
+    padding-top: 8.325%;
+    text-align: center;
+  }
