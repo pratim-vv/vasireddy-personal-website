@@ -256,3 +256,8 @@ p {
     padding-top: 2.08%;
     text-align: center;
   }
+
+  .resize {
+    width: 89%;
+    height: auto;
+  }
